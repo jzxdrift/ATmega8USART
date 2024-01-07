@@ -15,8 +15,8 @@ void initUSART(const uint16_t ubrr)
 	UBRRH = (uint8_t)(ubrr >> BYTE);
 	UBRRL = (uint8_t)ubrr;
 	
-	UCSRA |= _BV(U2X);												/*double transmission speed*/
-	UCSRB = _BV(RXEN) | _BV(TXEN);									/*receiver and transmitter enable*/
+	UCSRA |= _BV(U2X);							/*double transmission speed*/
+	UCSRB = _BV(RXEN) | _BV(TXEN);						/*receiver and transmitter enable*/
 	UCSRC = _BV(URSEL) | _BV(USBS) | _BV(UCSZ1) | _BV(UCSZ0);		/*2 stop bits, 8-bit frame*/
 	
 	setStreamUSART();
