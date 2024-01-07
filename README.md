@@ -1,1 +1,1 @@
-# ATmega8USART
+ATmega8 ADC data transmission via USART.
