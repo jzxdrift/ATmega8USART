@@ -1,1 +1,1 @@
-ATmega8 ADC data transmission via USART.
+ATmega8 ADC to PC communication via USART.
